@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { FC, MouseEvent } from "react";
-import { ButtonWrapper } from "../styles/QuestionCard.styles";
+import { ButtonWrapper, Wrapper } from "../styles/QuestionCard.styles";
 import { AnswerObject } from "../types";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 	totalQuestions: number;
 };
 const QuestionCard: FC<Props> = ({ question, answers, callback, userAnswer, questionNr, totalQuestions }) => (
-	<div>
+	<Wrapper>
 		<p className="number">
 			Question: {questionNr} / {totalQuestions}
 		</p>
@@ -30,7 +30,7 @@ const QuestionCard: FC<Props> = ({ question, answers, callback, userAnswer, ques
 				</ButtonWrapper>
 			))}
 		</div>
-	</div>
+	</Wrapper>
 );
 
 QuestionCard.propTypes = {
