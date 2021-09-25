@@ -20,8 +20,8 @@ function Layout({ title, keywords, description, children }: any) {
 }
 Layout.defaultProps = {
 	title: "Quiz App",
-	description: "",
-	keywords: "",
+	description: "Quiz app by Next js created by Chetan Jain",
+	keywords: "[NextJs, Quiz, Styled Component]",
 };
 Layout.propTypes = {
 	title: PropTypes.string,
