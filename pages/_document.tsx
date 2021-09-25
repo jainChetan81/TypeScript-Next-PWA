@@ -15,8 +15,8 @@ class MyDocument extends Document {
 					<meta name="apple-mobile-web-app-capable" content="yes" />
 					<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 					<meta name="apple-mobile-web-app-title" content="Quiz App" />
-					<link rel="apple-touch-icon" href="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-300,h-300" />
-					<link rel="shortcut icon" href="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-300,h-300" />
+					<link rel="apple-touch-icon" href="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-200,h-200" />
+					<link rel="shortcut icon" href="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-200,h-200" />
 					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:url" content="https://type-script-next-pwa.vercel.app" />
 					<meta name="twitter:title" content="Quiz App" />
@@ -28,7 +28,7 @@ class MyDocument extends Document {
 					<meta property="og:description" content="Quiz app by Next js created by Chetan Jain" />
 					<meta property="og:site_name" content="Quiz App" />
 					<meta property="og:url" content="https://type-script-next-pwa.vercel.app" />
-					<meta property="og:image" content="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-300,h-300" />
+					<meta property="og:image" content="https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-200,h-200" />
 				</Head>
 				<body>
 					<Main />

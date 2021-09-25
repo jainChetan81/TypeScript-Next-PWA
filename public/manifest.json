@@ -3,13 +3,13 @@
 	"short_name": "next-quiz",
 	"icons": [
 		{
-			"src": "/https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-192,h-192",
+			"src": "https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-192,h-192",
 			"sizes": "192x192",
 			"type": "image/webp",
 			"purpose": "any"
 		},
 		{
-			"src": "/https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-192,h-192",
+			"src": "https://ik.imagekit.io/aqaseg5nkl6/chetan.jpg?tr=w-192,h-192",
 			"sizes": "192x192",
 			"type": "image/webp",
 			"purpose": "maskable"
