@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    font-family: 'Catamaran', sans-serif;
+    font-family: var(--font-family);
     box-sizing: border-box;
   }
 `;
@@ -24,9 +24,10 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	filter: brightness(1.3);
 
 	> p {
-		color: #fff;
+		color: #050000;
 	}
 
 	.score {
@@ -38,7 +39,7 @@ export const Wrapper = styled.div`
 	h1 {
 		font-family: Fascinate Inline;
 		background-image: linear-gradient(180deg, #fff, #87f1ff);
-		font-weight: 400;
+		font-weight: 900;
 		background-size: 100%;
 		background-clip: text;
 		-webkit-background-clip: text;

@@ -10,6 +10,7 @@ function Layout({ title, keywords, description, children }: any) {
 				<meta name="description" content={description} />
 				<meta name="keywords" content={keywords} />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<link rel="manifest" href="manifest.json" />
 			</Head>
 
 			<GlobalStyle />
@@ -19,8 +20,8 @@ function Layout({ title, keywords, description, children }: any) {
 }
 Layout.defaultProps = {
 	title: "Quiz App",
-	description: "",
-	keywords: "",
+	description: "Quiz app by Next js created by Chetan Jain",
+	keywords: "[NextJs, Quiz, Styled Component]",
 };
 Layout.propTypes = {
 	title: PropTypes.string,

@@ -4,3 +4,22 @@
 	--font-family: "Catamaran", sans-serif;
 	--text-color: #fff;
 }
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+body::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	background: rgba(92, 90, 90, 0.26);
+	pointer-events: none;
+}
+section {
+	padding: 2rem;
+	text-align: center;
+	margin-top: 10rem;
+	font-size: large;
+}
