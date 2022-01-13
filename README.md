@@ -1,34 +1,124 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Quiz App
 
-First, run the development server:
+A Quiz app where user can answer 10 random questions and judge himself/herself based on score out of 10 where each question is of 1 point
 
-```bash
-npm run dev
-# or
-yarn dev
+
+## API Reference
+
+#### Get the questions on based of amount, type and difficulty level
+
+```http
+  GET https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Parameter | Type     |
+| :-------- | :------- |
+| `amount` | `number`|
+| `difficulty` | `string`|
+| `type` | `multiple or string`|
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Authors
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [@jainChetan](https://thechetanjain.in)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Color Reference
 
-## Learn More
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Background Color| ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
+| Text Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff|
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To install this project with npm or yarn.
+Go to project directory
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  git clone https://github.com/jainChetan81/TypeScript-Next-PWA.git
+  cd TypeScript-Next-PWA
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+then
+
+```bash
+  npm install || yarn install
+  npm run dev || yarn dev
+```
+
+
+## Build
+
+To build this project with npm or yarn.
+Go to project directory
+
+```bash
+  npm run build || yarn build
+```
+To build this project with static pages without edge functions where Server Side Rendering won't work
+```bash
+  npm run build && npm run export || yarn dev && yarn export
+```
+
+## Tech Stack
+
+**Client:** React, Context API , next-pwa, styled-components, typescript
+
+**Context API**- for State managment\
+**next-pwa** - for generating service worker\
+**styled-components** - for writing css in javascript\
+**typescript** - type based language developed on top of javscript\
+
+## Project Structure
+    --- ## api
+    --- ## public
+    --- ## component
+    --- ## styles
+    --- ## pages
+    --- ## types
+    --- ## utils
+
+## Lessons Learned
+
+- I started this project to learn about Nextjs and its working with typescript
+- Nextjs is used for for serverside fetching of the quiz api so that page is generated in the server not on client side and yet everytime questions will be different.
+
+## Contributing
+
+Contributions are always welcome!
+
+See project structure
+
+Please adhere to the Project Structure
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at jain.cj.chetan@gmail.com
+
+
+## 🚀 About Me
+I am a Full Stack Web Developer with over two years of experience in various tech stacks.
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://thechetanjain.in/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://thechetanjain.in/linkedin/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://thechetanjain.in/github)
+
+
+## Screenshots
+
+![App Screenshot](./screenshots/main.png)
+## Running Tests
+
+To run tests with unit testing and end to end testing and finally a report, run the following command
+
+```bash
+  npm run test:jest
+  npm run test:cypress
+  test:mocha-report
+```
+

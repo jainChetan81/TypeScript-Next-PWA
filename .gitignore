@@ -13,6 +13,7 @@
 /.vscode/
 .vscode/
 /out/
+package.lock.json
 
 # production
 /build
